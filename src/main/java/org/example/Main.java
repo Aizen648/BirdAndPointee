@@ -6,7 +6,6 @@ public class Main {
         int sizeGrid = 15;
         PointeesOnTheGrid.DEBUG = false;
         PointeesOnTheGrid.SLANTJUMP = true;
-        //
 
         try {
             PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(sizeGrid);
