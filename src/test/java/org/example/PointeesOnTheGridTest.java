@@ -103,8 +103,6 @@ class PointeesOnTheGridTest {
         Assertions.assertNotEquals(0,pointeesOnTheGrid.getMaxNumberOfPointees());
     }
 
-    // jedynimi publicznymi metodami są void, gettery i flyingBirds. Pozostałe metody są prywatne by nikt z zewnątrz
-    // nie wpłynał na ich działanie. Metoda flyingBirds opiera się na losowości więc nie da przewidzieć się jej wyników.
 
 
 }
