@@ -66,7 +66,7 @@ public class PointeesOnTheGrid {
         }
         
         switch (direction) {
-            case 0 -> newX++;                //dol
+            case 0 -> newX++;                //dol 0
             case 1 -> newX--;                //gor
             case 2 -> newY++;                //prawo
             case 3 -> newY--;                //lewo
@@ -140,13 +140,13 @@ public class PointeesOnTheGrid {
     }
 
     public void displayGridAfter25Jump() {
-        System.out.println(display(gridAfter25Jump));;
+        System.out.println(display(gridAfter25Jump));
     }
     public void displayGridAfter50Jump() {
-        System.out.println(display(gridAfter50Jump));;
+        System.out.println(display(gridAfter50Jump));
     }
     public void displayGridAfter100Jump() {
-        System.out.println(display(gridAfter100Jump));;
+        System.out.println(display(gridAfter100Jump));
     }
     @Override
     public String toString() {
