@@ -1,11 +1,16 @@
 package org.example;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PointeesOnTheGridTest {
+    @BeforeEach
+    public void init(){
+        PointeesOnTheGrid.DEBUG=false;
+    }
 
     @Test
     public void PointeesOnTheGrid_GridSizeTooSmall_ThrowGridSizeTooSmallException() {
@@ -22,7 +27,6 @@ class PointeesOnTheGridTest {
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
         PointeesOnTheGrid pointeesOnTheGrid2 = new PointeesOnTheGrid(15);
 
-        PointeesOnTheGrid.DEBUG=false;
         pointeesOnTheGrid2.flyingBird();
         pointeesOnTheGrid.flyingBird();
 
@@ -31,7 +35,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt25_returnDefault0_Equals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<24;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -40,7 +43,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt25_notReturnDefault0_NotEquals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<25;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -49,7 +51,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt50_returnDefault0_Equals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<49;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -58,7 +59,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt50_notReturnDefault0_NotEquals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<50;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -67,7 +67,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt100_returnDefault0_Equals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<99;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -76,7 +75,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointeesAt100_notReturnDefault0_NotEquals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<100;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -87,7 +85,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointees_returnDefault0_Equals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<24;i++){
             pointeesOnTheGrid.flyingBird();
         }
@@ -96,7 +93,6 @@ class PointeesOnTheGridTest {
     @Test
     public void getMaxNumberOfPointees_returnDefault0_NotEquals(){
         PointeesOnTheGrid pointeesOnTheGrid = new PointeesOnTheGrid(15);
-        PointeesOnTheGrid.DEBUG=false;
         for(int i=0;i<100;i++){
             pointeesOnTheGrid.flyingBird();
         }
