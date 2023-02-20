@@ -1,0 +1,11 @@
+A game round consists of sending a bird to fly over the checkerboard. When the bird approaches all Pointees
+panic and jump to a random adjacent square. Pointees sitting on an edge square won't jump off the
+checkerboard. The coupon remains on the square. At the end of each round the value of each coupon is
+determined by the number of Pointees sitting on it. For example, if 4 Pointees are sitting on Coupon A from the
+first square (row 1, column 1), then Coupon A is worth 4 points when the customer redeems it.
+
+The customer can redeem a coupon with its points only after the 25th, 50th and 100th round. Please calculate
+for each of these scenarios
+
+- the number of points per each coupon
+- the coupon(s) with the highest number of points.
